@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <head>
+    <title>:|</title>
+  </head>
+  <body>
+    <script>
+      function randRange(min,max) {
+        return Math.floor(Math.random()*(max-min+1))+min;
+      }
+
+      function writeReaction(reactionTop,reactionLeft,reactionSize,reactionRed,reactionGreen,reactionBlue) {
+        document.getElementsByTagName('body')[0].innerHTML += '<div style="position: absolute; top: '+reactionTop+'px; left: '+reactionLeft+'px; font-size: '+reactionSize+'px; color: rgba('+reactionRed+','+reactionGreen+','+reactionBlue+',1); -webkit-transform: rotate(90deg); -o-transform: rotate(90deg); -moz-transform: rotate(90deg); transform: rotate(90deg);">:|</div>';
+      }
+
+      function randomReactions() {
+        document.getElementsByTagName('body')[0].innerHTML = '';
+        var numReactions = randRange(5,10);
+        for(var i = 0; i < numReactions; i++) {
+          var reactionSize = randRange(12,500);
+          var reactionTop = randRange(0,(window.innerHeight - reactionSize*1.5));
+          var reactionLeft = randRange(0,(window.innerWidth - reactionSize*1.5));
+          var reactionRed = randRange(0,255);
+          var reactionGreen = randRange(0,255);
+          var reactionBlue = randRange(0,255);
+          writeReaction(reactionTop,reactionLeft,reactionSize,reactionRed,reactionGreen,reactionBlue);
+        }
+      }
+
+      var reactionsRoulette = setInterval(randomReactions,10);
+      setTimeout(function() { clearInterval(reactionsRoulette) },500);
+    </script>
+  </body>
+</html>
