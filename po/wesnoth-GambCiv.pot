@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GambCiv-1.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-30 00:21-0500\n"
+"POT-Creation-Date: 2013-11-30 19:08+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +20,7 @@ msgstr ""
 msgid "Barbarians"
 msgstr ""
 
-#. [era]: id=GC_era
+#. [era]: id=GambCiv
 #: ./GambCiv/eras.cfg:32
 msgid "GambCiv"
 msgstr ""
@@ -145,12 +145,24 @@ msgstr ""
 msgid "Convert to keep"
 msgstr ""
 
+#. [set_menu_item]: id=ba_automate
+#: ./GambCiv/utils/commands/automation/leader.cfg:9
+msgid "Automate"
+msgstr ""
+
+#. [command]
+#. [event]
+#: ./GambCiv/utils/commands/automation/leader.cfg:52 ./GambCiv/utils/commands/construction/terraform.cfg:8 ./GambCiv/utils/commands/construction/terraform.cfg:16 ./GambCiv/utils/commands/construction/terraform.cfg:23 ./GambCiv/utils/commands/construction/terraform.cfg:30
+msgid "What do you want to do?"
+msgstr ""
+
+#. [set_menu_item]: id=goldminemenu
 #: ./GambCiv/utils/commands/buildings/goldmine.cfg:9
 msgid "Mine for gold"
 msgstr ""
 
 #. [then]
-#: ./GambCiv/utils/commands/buildings/goldmine.cfg:34
+#: ./GambCiv/utils/commands/buildings/goldmine.cfg:23
 msgid "$side_stats[$side_number].mine_yield gold"
 msgstr ""
 
@@ -175,22 +187,22 @@ msgid "Convert to watchtower (extra protection)"
 msgstr ""
 
 #. [event]
-#: ./GambCiv/utils/commands/buildings/recruitable.cfg:61 ./GambCiv/utils/commands/buildings/recruitable.cfg:69 ./GambCiv/utils/commands/buildings/recruitable.cfg:83 ./GambCiv/utils/commands/buildings/recruitable.cfg:93
+#: ./GambCiv/utils/commands/buildings/recruitable.cfg:60 ./GambCiv/utils/commands/buildings/recruitable.cfg:68 ./GambCiv/utils/commands/buildings/recruitable.cfg:82 ./GambCiv/utils/commands/buildings/recruitable.cfg:92
 msgid "Recruit"
 msgstr ""
 
 #. [event]
-#: ./GambCiv/utils/commands/buildings/recruitable.cfg:62 ./GambCiv/utils/commands/buildings/recruitable.cfg:70 ./GambCiv/utils/commands/buildings/recruitable.cfg:84 ./GambCiv/utils/commands/buildings/recruitable.cfg:94
+#: ./GambCiv/utils/commands/buildings/recruitable.cfg:61 ./GambCiv/utils/commands/buildings/recruitable.cfg:69 ./GambCiv/utils/commands/buildings/recruitable.cfg:83 ./GambCiv/utils/commands/buildings/recruitable.cfg:93
 msgid "What will you recruit?"
 msgstr ""
 
 #. [event]
-#: ./GambCiv/utils/commands/buildings/recruitable.cfg:102
+#: ./GambCiv/utils/commands/buildings/recruitable.cfg:101
 msgid "Summon undead"
 msgstr ""
 
 #. [event]
-#: ./GambCiv/utils/commands/buildings/recruitable.cfg:103
+#: ./GambCiv/utils/commands/buildings/recruitable.cfg:102
 msgid "What will you summon?"
 msgstr ""
 
@@ -216,36 +228,37 @@ msgid "Build a ship"
 msgstr ""
 
 #. [command]
-#: ./GambCiv/utils/commands/buildings/shipyard.cfg:59
+#: ./GambCiv/utils/commands/buildings/shipyard.cfg:56
 msgid "What should we build?"
 msgstr ""
 
 #. [command]
-#: ./GambCiv/utils/commands/buildings/shipyard.cfg:60 ./GambCiv/utils/commands/buildings/shipyard.cfg:61
+#: ./GambCiv/utils/commands/buildings/shipyard.cfg:57 ./GambCiv/utils/commands/buildings/shipyard.cfg:58
 msgid "Fishing Boat"
 msgstr ""
 
 #. [command]
-#: ./GambCiv/utils/commands/buildings/shipyard.cfg:64 ./GambCiv/utils/commands/buildings/shipyard.cfg:65
+#: ./GambCiv/utils/commands/buildings/shipyard.cfg:61 ./GambCiv/utils/commands/buildings/shipyard.cfg:62
 msgid "Transport Ship"
 msgstr ""
 
 #. [command]
-#: ./GambCiv/utils/commands/buildings/shipyard.cfg:68 ./GambCiv/utils/commands/buildings/shipyard.cfg:69
+#: ./GambCiv/utils/commands/buildings/shipyard.cfg:65 ./GambCiv/utils/commands/buildings/shipyard.cfg:66
 msgid "Battleship"
 msgstr ""
 
+#. [set_menu_item]: id=stonequarrymenu
 #: ./GambCiv/utils/commands/buildings/stonequarry.cfg:9
 msgid "Mine for material"
 msgstr ""
 
 #. [then]
-#: ./GambCiv/utils/commands/buildings/stonequarry.cfg:34
+#: ./GambCiv/utils/commands/buildings/stonequarry.cfg:27
 msgid "$side_stats[$side_number].quarry_yield material"
 msgstr ""
 
 #. [chat]
-#: ./GambCiv/utils/commands/buildings/trading_post.cfg:44 ./GambCiv/utils/commands/leader/check_resources.cfg:20 ./GambCiv/utils/commands/leader/new_leader.cfg:73 ./GambCiv/utils/commands/leader/new_leader.cfg:159 ./GambCiv/utils/initialize.cfg:270 ./GambCiv/utils/initialize.cfg:294 ./GambCiv/utils/initialize.cfg:318 ./GambCiv/utils/initialize.cfg:328 ./GambCiv/utils/initialize.cfg:352 ./GambCiv/utils/initialize.cfg:362 ./GambCiv/utils/menus.cfg:52
+#: ./GambCiv/utils/commands/buildings/trading_post.cfg:44 ./GambCiv/utils/commands/leader/check_resources.cfg:20 ./GambCiv/utils/commands/leader/new_leader.cfg:79 ./GambCiv/utils/commands/leader/new_leader.cfg:165 ./GambCiv/utils/commands/leader/new_leader.cfg:190 ./GambCiv/utils/menus.cfg:52
 msgid "INFO"
 msgstr ""
 
@@ -323,7 +336,7 @@ msgstr ""
 
 #. [command]
 #. [option]
-#: ./GambCiv/utils/commands/buildings/trading_post.cfg:151 ./GambCiv/utils/commands/ships.cfg:294 ./GambCiv/utils/commands/ships.cfg:374 ./GambCiv/utils/menus.cfg:95
+#: ./GambCiv/utils/commands/buildings/trading_post.cfg:151 ./GambCiv/utils/commands/ships.cfg:297 ./GambCiv/utils/commands/ships.cfg:377 ./GambCiv/utils/menus.cfg:88
 msgid "Never mind."
 msgstr ""
 
@@ -338,72 +351,72 @@ msgid "Study at the university"
 msgstr ""
 
 #. [then]
-#: ./GambCiv/utils/commands/buildings/university.cfg:35
+#: ./GambCiv/utils/commands/buildings/university.cfg:36
 msgid "+8 experience"
 msgstr ""
 
 #. [event]
-#: ./GambCiv/utils/commands/buildings/university.cfg:53
+#: ./GambCiv/utils/commands/buildings/university.cfg:54
 msgid "Expand curriculum"
 msgstr ""
 
 #. [event]
-#: ./GambCiv/utils/commands/buildings/university.cfg:54
+#: ./GambCiv/utils/commands/buildings/university.cfg:55
 msgid "What should we teach?"
 msgstr ""
 
 #. [event]
-#: ./GambCiv/utils/commands/buildings/university.cfg:55
+#: ./GambCiv/utils/commands/buildings/university.cfg:56
 msgid "Black magic"
 msgstr ""
 
 #. [event]
-#: ./GambCiv/utils/commands/buildings/university.cfg:56
+#: ./GambCiv/utils/commands/buildings/university.cfg:57
 msgid "Green magic"
 msgstr ""
 
 #. [chat]
-#: ./GambCiv/utils/commands/cannot_build.cfg:14 ./GambCiv/utils/initialize.cfg:13
+#: ./GambCiv/utils/commands/cannot_build.cfg:17 ./GambCiv/utils/initialize.cfg:13
 msgid "HELP"
 msgstr ""
 
 #. [event]
-#: ./GambCiv/utils/commands/cannot_build.cfg:25
+#: ./GambCiv/utils/commands/cannot_build.cfg:28
 msgid "No community nearby."
 msgstr ""
 
 #. [event]
-#: ./GambCiv/utils/commands/cannot_build.cfg:25
+#: ./GambCiv/utils/commands/cannot_build.cfg:28
 msgid "You have to be within 5 hexes of your leader to build. Or you can be within 15 hexes of a hut that you own."
 msgstr ""
 
 #. [event]
-#: ./GambCiv/utils/commands/cannot_build.cfg:31
+#: ./GambCiv/utils/commands/cannot_build.cfg:34
 msgid "No worker nearby."
 msgstr ""
 
 #. [event]
-#: ./GambCiv/utils/commands/cannot_build.cfg:31
+#: ./GambCiv/utils/commands/cannot_build.cfg:34
 msgid "You can only build within 3 hexes of a peasant."
 msgstr ""
 
 #. [event]
-#: ./GambCiv/utils/commands/cannot_build.cfg:37
+#: ./GambCiv/utils/commands/cannot_build.cfg:40
 msgid "Used this hex already."
 msgstr ""
 
 #. [event]
-#: ./GambCiv/utils/commands/cannot_build.cfg:37
+#: ./GambCiv/utils/commands/cannot_build.cfg:40
 msgid "You can only modify a hex once per turn. If you wait until your next turn, you can try building here again."
 msgstr ""
 
 #. [event]
-#: ./GambCiv/utils/commands/cannot_build.cfg:41
+#: ./GambCiv/utils/commands/cannot_build.cfg:44
 msgid "You can't build right next to an enemy hut or watchtower. Capture it first."
 msgstr ""
 
 #. [event]
-#: ./GambCiv/utils/commands/cannot_build.cfg:41
+#: ./GambCiv/utils/commands/cannot_build.cfg:44
 msgid "Enemy community nearby."
 msgstr ""
 
@@ -419,22 +432,22 @@ msgstr ""
 
 #. [event]
 #: ./GambCiv/utils/commands/construction/flat.cfg:9
-msgid "A castle"
-msgstr ""
-
-#. [event]
-#: ./GambCiv/utils/commands/construction/flat.cfg:10
 msgid "A hut"
 msgstr ""
 
 #. [event]
+#: ./GambCiv/utils/commands/construction/flat.cfg:10
+msgid "A tavern"
+msgstr ""
+
+#. [event]
 #: ./GambCiv/utils/commands/construction/flat.cfg:11
-msgid "A recruiter"
+msgid "A drake village"
 msgstr ""
 
 #. [event]
 #: ./GambCiv/utils/commands/construction/flat.cfg:12
-msgid "A trading post"
+msgid "A recruiter"
 msgstr ""
 
 #. [event]
@@ -454,17 +467,17 @@ msgstr ""
 
 #. [event]
 #: ./GambCiv/utils/commands/construction/flat.cfg:16
-msgid "A tavern"
+msgid "An archery tower"
 msgstr ""
 
 #. [event]
 #: ./GambCiv/utils/commands/construction/flat.cfg:17
-msgid "A drake village"
+msgid "A trading post"
 msgstr ""
 
 #. [event]
 #: ./GambCiv/utils/commands/construction/flat.cfg:18
-msgid "An archery tower"
+msgid "A castle"
 msgstr ""
 
 #. [event]
@@ -515,11 +528,6 @@ msgstr ""
 #. [event]
 #: ./GambCiv/utils/commands/construction/terraform.cfg:7 ./GambCiv/utils/commands/construction/terraform.cfg:15 ./GambCiv/utils/commands/construction/terraform.cfg:22 ./GambCiv/utils/commands/construction/terraform.cfg:29
 msgid "Terraform"
-msgstr ""
-
-#. [event]
-#: ./GambCiv/utils/commands/construction/terraform.cfg:8 ./GambCiv/utils/commands/construction/terraform.cfg:16 ./GambCiv/utils/commands/construction/terraform.cfg:23 ./GambCiv/utils/commands/construction/terraform.cfg:30
-msgid "What do you want to do?"
 msgstr ""
 
 #. [event]
@@ -603,86 +611,91 @@ msgid "Make new leader"
 msgstr ""
 
 #. [chat]
-#: ./GambCiv/utils/commands/leader/new_leader.cfg:74
-msgid "Your leader has died, but slaughter rules are enabled. On your next turn you may right click any of your units and make them your new leader. You'll get your villages back then too."
+#: ./GambCiv/utils/commands/leader/new_leader.cfg:80
+msgid "Your leader has died, but new leaders are enabled. On your next turn you may right click any of your units and make them your new leader. You'll get your villages back then too."
 msgstr ""
 
 #. [unit]: id=temp_leader_$unit.side, type=Mudcrawler
-#: ./GambCiv/utils/commands/leader/new_leader.cfg:84
+#: ./GambCiv/utils/commands/leader/new_leader.cfg:90
 msgid "Temporary Leader"
 msgstr ""
 
 #. [chat]
-#: ./GambCiv/utils/commands/leader/new_leader.cfg:161
+#: ./GambCiv/utils/commands/leader/new_leader.cfg:167
 msgid "You have no peasants, and own no huts. We have turned your leader back into a peasant."
 msgstr ""
 
+#. [chat]
+#: ./GambCiv/utils/commands/leader/new_leader.cfg:192
+msgid "You have no peasants, and no huts. We have turned your leader back into a peasant."
+msgstr ""
+
 #. [attack]: type=impact
-#: ./GambCiv/utils/commands/ships.cfg:18 ./GambCiv/utils/commands/ships.cfg:45 ./GambCiv/utils/commands/ships.cfg:119
+#: ./GambCiv/utils/commands/ships.cfg:19 ./GambCiv/utils/commands/ships.cfg:48 ./GambCiv/utils/commands/ships.cfg:77
 msgid "crew"
 msgstr ""
 
 #. [attack]: type=fire
-#: ./GambCiv/utils/commands/ships.cfg:71
+#: ./GambCiv/utils/commands/ships.cfg:86
 msgid "cannons"
 msgstr ""
 
 #. [set_menu_item]: id=aa_shipfishmenu
-#: ./GambCiv/utils/commands/ships.cfg:136
+#: ./GambCiv/utils/commands/ships.cfg:141
 msgid "Go fishing"
 msgstr ""
 
 #. [then]
-#: ./GambCiv/utils/commands/ships.cfg:155
+#: ./GambCiv/utils/commands/ships.cfg:158
 msgid "$side_stats[$side_number].fish_yield food"
 msgstr ""
 
 #. [set_menu_item]: id=ab_repair_ship
-#: ./GambCiv/utils/commands/ships.cfg:176
+#: ./GambCiv/utils/commands/ships.cfg:179
 msgid "Repair the ship"
 msgstr ""
 
 #. [set_menu_item]: id=da_board_ship
-#: ./GambCiv/utils/commands/ships.cfg:243
+#: ./GambCiv/utils/commands/ships.cfg:246
 msgid "Board ship"
 msgstr ""
 
 #. [command]
-#: ./GambCiv/utils/commands/ships.cfg:292
+#: ./GambCiv/utils/commands/ships.cfg:295
 msgid ""
 "You have: <span color=$s_ACTION_COLOR|>$side_stats[$side_number].action_points Actions</span> | <span color=$s_GOLD_COLOR|>$side_stats[$side_number].gold Gold</span> | <span color=$s_FOOD_COLOR|>$side_stats[$side_number].food Food</span> | <span color=$s_MATERIAL_COLOR|>$side_stats[$side_number].material Material</span>\n"
 "Which ship to board?"
 msgstr ""
 
 #. [then]
-#: ./GambCiv/utils/commands/ships.cfg:300
+#: ./GambCiv/utils/commands/ships.cfg:303
 msgid "$nearby_ships[$i].name at $nearby_ships[$i].x,$nearby_ships[$i].y"
 msgstr ""
 
 #. [set_menu_item]: id=da_disembark
-#: ./GambCiv/utils/commands/ships.cfg:331
+#: ./GambCiv/utils/commands/ships.cfg:334
 msgid "Disembark from ship"
 msgstr ""
 
 #. [command]
-#: ./GambCiv/utils/commands/ships.cfg:372
+#: ./GambCiv/utils/commands/ships.cfg:375
 msgid ""
 "You have: <span color=$s_ACTION_COLOR|>$side_stats[$side_number].action_points Actions</span> | <span color=$s_GOLD_COLOR|>$side_stats[$side_number].gold Gold</span> | <span color=$s_FOOD_COLOR|>$side_stats[$side_number].food Food</span> | <span color=$s_MATERIAL_COLOR|>$side_stats[$side_number].material Material</span>\n"
 "Which unit should disembark?"
 msgstr ""
 
 #. [value]
-#: ./GambCiv/utils/commands/ships.cfg:382
+#: ./GambCiv/utils/commands/ships.cfg:385
 msgid "$nearby_ships[$i].variables.containers[$j].name from $nearby_ships[$i].name at $nearby_ships[$i].x,$nearby_ships[$i].y"
 msgstr ""
 
 #. [dummy]: id=GCE_tanker
-#: ./GambCiv/utils/extended/abilities/tanker.cfg:6
+#: ./GambCiv/utils/extended/abilities/tanker.cfg:7
 msgid "tanker"
 msgstr ""
 
 #. [dummy]: id=GCE_tanker
-#: ./GambCiv/utils/extended/abilities/tanker.cfg:7
+#: ./GambCiv/utils/extended/abilities/tanker.cfg:8
 msgid ""
 "Tanker:\n"
 "This unit absorbs defensive damage for adjacent allies."
@@ -691,7 +704,7 @@ msgstr ""
 #. [chat]
 #: ./GambCiv/utils/initialize.cfg:7
 msgid ""
-"GambCiv 1.0.2 - by Gambit\n"
+"GambCiv 1.1.0 - by Gambit\n"
 "Thanks to Espreon, GambCiv is now translatable. Hopefully some day this will help bring it to an even wider audience.\n"
 "A special thanks to all the GEB fans who kept insisting that it be made.\n"
 "And thanks to everyone for playing!"
@@ -723,67 +736,32 @@ msgid "Your first priority should be to find some flat ground and build a hut."
 msgstr ""
 
 #. [message]: speaker=narrator
-#: ./GambCiv/utils/initialize.cfg:248
-msgid "Do you want to add bonus resources?"
-msgstr ""
-
-#. [option]: speaker=narrator
 #: ./GambCiv/utils/initialize.cfg:251
-msgid "None"
+msgid "Seasons are enabled."
 msgstr ""
 
-#. [option]: speaker=narrator
-#: ./GambCiv/utils/initialize.cfg:257
-msgid "Some"
+#. [message]: speaker=narrator
+#: ./GambCiv/utils/initialize.cfg:261
+msgid "Seasons are disabled."
 msgstr ""
 
-#. [option]: speaker=narrator
-#: ./GambCiv/utils/initialize.cfg:263
-msgid "Lots"
-msgstr ""
-
-#. [chat]
-#: ./GambCiv/utils/initialize.cfg:271
-msgid "$player1.name has chosen to add $bonus_resources_string bonus resources. Settlers will get them next turn."
+#. [message]: speaker=narrator
+#: ./GambCiv/utils/initialize.cfg:272
+msgid "New leaders are enabled. Sides are eliminated when they have no more units."
 msgstr ""
 
 #. [message]: speaker=narrator
 #: ./GambCiv/utils/initialize.cfg:279
-msgid "Do you want to enable seasons?"
-msgstr ""
-
-#. [chat]
-#: ./GambCiv/utils/initialize.cfg:295
-msgid "$player1.name has disabled seasons for this match."
+msgid "New leaders are disabled. Sides are eliminated when their leader dies."
 msgstr ""
 
 #. [message]: speaker=narrator
-#: ./GambCiv/utils/initialize.cfg:311
-msgid "Do you want to allow players to keep crowning new leaders?"
-msgstr ""
-
-#. [chat]
-#: ./GambCiv/utils/initialize.cfg:319
-msgid "$player1.name has chosen classic rules (kill the enemy leaders to win)."
-msgstr ""
-
-#. [chat]
-#: ./GambCiv/utils/initialize.cfg:329
-msgid "$player1.name has chosen slaughter rules (kill all enemy units to win)."
-msgstr ""
-
-#. [chat]
-#: ./GambCiv/utils/initialize.cfg:353
-msgid "You have received a bonus of 100 gold, 10 food, and 30 material."
-msgstr ""
-
-#. [chat]
-#: ./GambCiv/utils/initialize.cfg:363
-msgid "You have received a bonus of 200 gold, 20 food, and 60 material."
+#: ./GambCiv/utils/initialize.cfg:287
+msgid "Settlers will receive $GambCiv_bonus_gold bonus gold, $GambCiv_bonus_food bonus food, and $GambCiv_bonus_material bonus material."
 msgstr ""
 
 #. [message]: speaker=narrator
-#: ./GambCiv/utils/menus.cfg:106
+#: ./GambCiv/utils/menus.cfg:99
 msgid "You have: <span color=$s_ACTION_COLOR|>$side_stats[$side_number].action_points Actions</span> | <span color=$s_GOLD_COLOR|>$side_stats[$side_number].gold Gold</span> | <span color=$s_FOOD_COLOR|>$side_stats[$side_number].food Food</span> | <span color=$s_MATERIAL_COLOR|>$side_stats[$side_number].material Material</span>"
 msgstr ""
 
